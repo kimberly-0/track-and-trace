@@ -6,7 +6,7 @@ It was created as part of the *Introduction to Software Development* module of t
 
 ## Preview
 
-Click [here](https://youtu.be/hBZEWHxWpEQ) for a video preview of the program
+Click [here](https://youtu.be/hBZEWHxWpEQ) for a video preview of the program on YouTube
 
 ![Screenshot of track and trace program](https://github.com/kidijkmans/track-and-trace/blob/master/preview.png)
 
