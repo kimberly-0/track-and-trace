@@ -4,6 +4,10 @@ This project is a COVID-19 track and trace system with a command line interface.
 
 It was created as part of the *Introduction to Software Development* module of the MSc Computer Science course at Newcastle University in November 2020 but has been revised and updated in September 2022.
 
+## Preview
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/hBZEWHxWpEQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## Tools and technologies used
 
 - Programming language: **Java 17**
@@ -17,7 +21,7 @@ It was created as part of the *Introduction to Software Development* module of t
 - `ArrayList` (util package) -> to store Events and Establishments
 - `DateTimeFormatter`, `LocalDate`, `LocalTime`, and `Period` (time package) -> for creating date and time objects and calculating a user’s age
 
-The code has been commented to further explain the purpose of classes and methods.
+The code has been commented to further explain the purpose of the classes and methods.
 
 ## Getting started
 
