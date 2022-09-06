@@ -9,8 +9,7 @@
   <version>1.0-SNAPSHOT</version>
 
   <name>track-and-trace</name>
-  <!-- FIXME change it to the project's website -->
-  <url>http://www.example.com</url>
+  <url>https://github.com/kidijkmans/track-and-trace</url>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
