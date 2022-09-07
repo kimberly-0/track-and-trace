@@ -34,7 +34,7 @@ public class IO {
      * This method prints the main menu options to the command line interface
      */
     private void printMainMenu() {
-        System.out.printf("%n%s%n%s%n%s%n%s%n%s%n%s%n%s%n%s%n",
+        System.out.printf("%n%s%n%s%n%s%n%s%n%s%n%s%n%s%n%s%n%s%n",
                 "------ MAIN MENU ------",
                 "1. Record an Event",
                 "2. Add Establishment",
@@ -42,20 +42,22 @@ public class IO {
                 "4. Print Events",
                 "5. Print Establishments",
                 "6. Exit the program",
-                "------------------------");
+                "------------------------",
+                "Please select an option by typing the number");
     }
 
     /*
      * This method prints the filters menu options to the command line interface
      */
     private void printFiltersMenu() {
-        System.out.printf("%n%s%n%s%n%s%n%s%n%s%n%s%n",
+        System.out.printf("%n%s%n%s%n%s%n%s%n%s%n%s%n%s%n",
                 "------ FILTER MENU ------",
                 "1. Records by Establishment",
                 "2. Records by Date",
                 "3. Records by Name",
                 "4. Go Back",
-                "------------------------");
+                "------------------------",
+                "Please select an option from the filters menu");
     }
 
     /**
@@ -67,7 +69,6 @@ public class IO {
         boolean quit = false;
         while (!quit) {
             printMainMenu(); // Print the main menu options
-            System.out.println("Please select an option by typing the number");
 
             int choice = 0;
             try {
@@ -124,7 +125,6 @@ public class IO {
         boolean quit = false;
         while (!quit) {
             printFiltersMenu(); // Print the filter menu options
-            System.out.println("Please select an option from the filters menu");
 
             int choice = 0;
             try {
