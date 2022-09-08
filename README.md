@@ -8,7 +8,7 @@ It was created as part of the *Introduction to Software Development* module of t
 
 Click [here](https://youtu.be/hBZEWHxWpEQ) for a video preview of the program on YouTube
 
-![Screenshot of track and trace program](https://github.com/kidijkmans/track-and-trace/blob/master/preview.png)
+<img src="https://github.com/kidijkmans/track-and-trace/blob/master/preview.png" width="500">
 
 ## Tools and technologies used
 
