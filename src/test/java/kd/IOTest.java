@@ -3,24 +3,12 @@ package kd;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.containsString;
 
-import org.junit.Before;
 import org.junit.Test;
-
-import kd.datahandlers.Controller;
 
 /**
  * This class tests the input and output of program via command line interface
  */
 public class IOTest extends TestBase {
-
-    protected IO io;
-    protected Controller controller;
-
-    @Before
-    public void setUp() {
-        io = new IO();
-        controller = new Controller();
-    }
 
     /**
      * Tests the function to record an Event (which includes recording a User and

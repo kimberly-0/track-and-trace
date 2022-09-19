@@ -15,6 +15,7 @@ public class TestBase {
 
     // Read command line interface output
     protected final ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
+    protected IO io;
 
     // Simulate command line interface user input (scanner)
     InputStream stdin;
@@ -23,6 +24,7 @@ public class TestBase {
     public void setUp() {
         System.setOut(new PrintStream(outputStream));
         stdin = System.in;
+        io = new IO();
     }
 
     @After
