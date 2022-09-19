@@ -13,9 +13,10 @@ import org.junit.Before;
  */
 public class TestBase {
 
-    // Read command line interface output
-    protected final ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
     protected IO io;
+
+    // Store command line interface output
+    protected final ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
 
     // Simulate command line interface user input (scanner)
     InputStream stdin;
@@ -32,12 +33,14 @@ public class TestBase {
         System.setIn(stdin);
     }
 
-    String[] getOutputLines() {
-        return outputStream.toString().split("\\r?\\n");
-    }
-
+    // Set the user input for scanner to read from System.in
     void setInput(String str) {
         System.setIn(new ByteArrayInputStream((str + "\r\n").getBytes()));
+    }
+
+    // Get the command line interface output
+    String[] getOutputLines() {
+        return outputStream.toString().split("\\r?\\n");
     }
 
 }
