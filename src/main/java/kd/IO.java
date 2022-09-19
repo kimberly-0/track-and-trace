@@ -27,7 +27,7 @@ import kd.models.*;
 public class IO {
 
     private final static ImportCSV importcsv = new ImportCSV();
-    private final static Controller controller = new Controller();
+    private final Controller controller = new Controller();
     private final static Recorder recorder = new Recorder();
 
     /*
