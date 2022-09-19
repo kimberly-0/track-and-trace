@@ -3,7 +3,7 @@ package kd.models;
 /**
  * The Establishment class is responsible for creating a Establishment object.
  * 
- * Updated on 02/09/2022
+ * Updated on 19/09/2022
  * 
  * @author Kimberly Dijkmans
  */
@@ -14,6 +14,15 @@ public class Establishment {
     private String postCode;
     private int maxOccupancy;
 
+    /**
+     * This constructor creates a new Establishment with a set name, first line of
+     * address, postcode, and maximum occupancy
+     * 
+     * @param name             The name of the establishment
+     * @param firstLineAddress The first line of the address of the establishment
+     * @param postCode         The post code of the establishment
+     * @param maxOccupancy     The maximum occupancy of the establishment
+     */
     public Establishment(String name, String firstLineAddress, String postCode, int maxOccupancy) {
         this.name = name;
         this.firstLineAddress = firstLineAddress;
@@ -61,7 +70,7 @@ public class Establishment {
     }
 
     /**
-     * @see java.lang.Object#toString(java.lang.Object)
+     * @see java.lang.Object#toString()
      */
     @Override
     public String toString() {

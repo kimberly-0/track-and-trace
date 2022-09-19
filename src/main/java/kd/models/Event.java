@@ -8,7 +8,7 @@ import java.util.Random;
 /**
  * The Event class is responsible for creating an Event object.
  * 
- * Updated on 02/09/2022
+ * Updated on 19/09/2022
  * 
  * @author Kimberly Dijkmans
  */
@@ -23,6 +23,16 @@ public class Event {
 
     private final DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
 
+    /**
+     * This constructor creates a new Event with a set user, date and time, party
+     * number and establishment
+     * 
+     * @param user          The user that attended the event
+     * @param date          The date of the event
+     * @param time          The time of the event
+     * @param partyNumber   The party number of the event
+     * @param establishment The establishment the event took place
+     */
     public Event(User user, LocalDate date, LocalTime time, int partyNumber, Establishment establishment) {
         int min = 100000000;
         int max = 999999999;
@@ -34,6 +44,14 @@ public class Event {
         this.establishment = establishment;
     }
 
+    /**
+     * This constructor creates a new Event with a set user, party number and
+     * establishment
+     * 
+     * @param user          The user that attended the event
+     * @param partyNumber   The party number of the event
+     * @param establishment The establishment where the event took place
+     */
     public Event(User user, int partyNumber, Establishment establishment) {
         this.user = user;
         this.partyNumber = partyNumber;
@@ -113,7 +131,7 @@ public class Event {
     }
 
     /**
-     * @see java.lang.Object#toString(java.lang.Object)
+     * @see java.lang.Object#toString()
      */
     @Override
     public String toString() {

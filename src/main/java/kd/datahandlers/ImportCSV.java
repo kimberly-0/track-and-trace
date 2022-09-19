@@ -10,7 +10,7 @@ import kd.models.*;
  * The ImportCSV class is responsible for importing Establishments from a CSV
  * file.
  * 
- * Updated on 02/09/2022
+ * Updated on 19/09/2022
  * 
  * @author Kimberly Dijkmans
  */
@@ -19,7 +19,10 @@ public class ImportCSV {
     /**
      * This method imports establishments from a CSV file
      * 
-     * @param establishmentCSVFileURI
+     * @param establishmentCSVFileURI The URI of the CSV file containing
+     *                                establishments to import
+     * @param controller              The controller that stores the list of
+     *                                establishments
      */
     public void importEstablishmentsFromCSV(String establishmentCSVFileURI, Controller controller) {
         if (establishmentCSVFileURI != null) {

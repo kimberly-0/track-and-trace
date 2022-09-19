@@ -9,7 +9,7 @@ import kd.models.*;
  * The Controller class is responsible for storing and retrieving information
  * regarding Users, Establishments, and Events.
  * 
- * Updated on 02/09/2022
+ * Updated on 19/09/2022
  * 
  * @author Kimberly Dijkmans
  */
@@ -18,6 +18,10 @@ public class Controller {
     private ArrayList<Establishment> establishments;
     private ArrayList<Event> events;
 
+    /**
+     * This constructor creates a new Controller with an empty establishments list
+     * and an empty events list
+     */
     public Controller() {
         this.establishments = new ArrayList<>();
         this.events = new ArrayList<>();
@@ -27,8 +31,10 @@ public class Controller {
      * This method adds an Establishment to the list of establishments if it doesn't
      * already exist
      * 
-     * @param establishment
-     * @return boolean indicating whether adding it to the list was successful
+     * @param establishment The establishment to be added to the list of
+     *                      establishments
+     * @return <code>true</code> if adding to the list was successful
+     *         <code>false</code> if adding to the list was unsuccessful
      */
     public boolean addEstablishment(Establishment establishment) {
         for (Establishment e : establishments) {
@@ -42,8 +48,9 @@ public class Controller {
     /**
      * This method adds an Event to the list of events if it doesn't already exist
      * 
-     * @param event
-     * @return boolean indicating whether adding it to the list was successful
+     * @param event The event to be added to list of events
+     * @return <code>true</code> if adding to the list was successful
+     *         <code>false</code> if adding to the list was unsuccessful
      */
     public boolean addEvent(Event event) {
         for (Event e : events) {
@@ -74,8 +81,8 @@ public class Controller {
     /**
      * This method filters events by a given establishment
      * 
-     * @param nameOfEstablishment
-     * @return
+     * @param nameOfEstablishment The name of establishment to filter on
+     * @return list of events for the specific establishment
      */
     public ArrayList<Event> filterEventByEstablishment(String nameOfEstablishment) {
         ArrayList<Event> filteredRecords = new ArrayList<>();
@@ -91,8 +98,8 @@ public class Controller {
     /**
      * This method filters the events by a specific date
      * 
-     * @param eventDate
-     * @return list of events for a specific date
+     * @param eventDate The date of event to filter on
+     * @return list of events for the specific date
      */
     public ArrayList<Event> filterEventByDate(LocalDate eventDate) {
         ArrayList<Event> filteredRecords = new ArrayList<>();
@@ -108,8 +115,8 @@ public class Controller {
     /**
      * This method filters the events by a specific user
      * 
-     * @param userName
-     * @param userEmail
+     * @param userName  The name of user to filter on
+     * @param userEmail The email of user to filter on
      * @return list of events for a specific user
      */
     public ArrayList<Event> filterEventByUser(String userName, String userEmail) {

@@ -7,7 +7,7 @@ import java.time.format.DateTimeFormatter;
 /**
  * The User class is responsible for creating a User object.
  * 
- * Updated on 02/09/2022
+ * Updated on 19/09/2022
  * 
  * @author Kimberly Dijkmans
  */
@@ -21,6 +21,15 @@ public class User {
 
     private final DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
 
+    /**
+     * This constructor creates a new User with a set name, date of birth, email
+     * address, and phone number
+     * 
+     * @param name         The name of the user
+     * @param dob          The date of birth of the user
+     * @param emailaddress The email address of the user
+     * @param phonenumber  The phone number of the user
+     */
     public User(String name, LocalDate dob, String emailaddress, String phonenumber) {
         this.name = name;
         this.dob = dob;
@@ -88,7 +97,7 @@ public class User {
     }
 
     /**
-     * @see java.lang.Object#toString(java.lang.Object)
+     * @see java.lang.Object#toString()
      */
     @Override
     public String toString() {

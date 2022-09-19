@@ -11,16 +11,18 @@ import kd.models.*;
  * The Recorder class is responsible for recording new Users, Establishments,
  * and Events via the command line interface.
  * 
- * Updated on 02/09/2022
+ * Updated on 19/09/2022
  * 
  * @author Kimberly Dijkmans
  */
 public class Recorder {
 
     /**
-     * This method creates a new User
+     * This method creates a new User based on the command line user input
      * 
-     * @return user
+     * @param scanner The scanner created in the runMainMenu method for the purpose
+     *                of recording user input via the command line interface
+     * @return the created user object
      */
     public User recordUser(Scanner scanner) {
         scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?"); // Skip the new line character
@@ -89,9 +91,11 @@ public class Recorder {
     }
 
     /**
-     * This method creates a new Establishment
+     * This method creates a new Establishment based on the command line user input
      * 
-     * @return establishment
+     * @param scanner The scanner created in the runMainMenu method for the purpose
+     *                of recording user input via the command line interface
+     * @return the created establishment object
      */
     public Establishment recordEstablishment(Scanner scanner) {
         String name = null;
@@ -122,9 +126,11 @@ public class Recorder {
     }
 
     /**
-     * This method creates a new Event
+     * This method creates a new Event based on the command line user input
      * 
-     * @return event
+     * @param scanner The scanner created in the runMainMenu method for the purpose
+     *                of recording user input via the command line interface
+     * @return the created event object
      */
     public Event recordEvent(Scanner scanner) {
         // Record a user

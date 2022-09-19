@@ -10,7 +10,7 @@ import kd.datahandlers.*;
 import kd.models.*;
 
 /**
- * <h1>COVID-19 track and trace system</h1>
+ * <h2>COVID-19 track and trace system</h2>
  * The system will record and manage data via a command line interface.
  * The data is recorded for the purpose of tracing and alerting people who
  * have been in close contact with a person who tested positive for COVID-19.
@@ -20,7 +20,7 @@ import kd.models.*;
  * The IO class manages the input and output of the program, i.e. the command
  * line interface menus, the user's response, and the printed results.
  * 
- * Updated on 02/09/2022
+ * Updated on 19/09/2022
  * 
  * @author Kimberly Dijkmans
  */
@@ -117,7 +117,7 @@ public class IO {
         }
     }
 
-    /**
+    /*
      * This method displays and handles the submenu for filtering
      */
     private void runFiltersMenu(Scanner scanner) {
@@ -195,6 +195,8 @@ public class IO {
     /**
      * This method prints the users of the events for a specific establishment to
      * the command line interface
+     * 
+     * @param establishment The name of the establishment to show users for
      */
     public void printFilteredEventsByEstablishment(String establishment) {
         ArrayList<Event> filteredRecords = controller.filterEventByEstablishment(establishment);
@@ -208,6 +210,8 @@ public class IO {
     /**
      * This method prints the events for a specific date to the command line
      * interface
+     * 
+     * @param date The date to show events for
      */
     public void printFilteredEventsByDate(String date) {
         try {
@@ -227,6 +231,9 @@ public class IO {
     /**
      * This method prints the events for a specific user to the command line
      * interface
+     * 
+     * @param name  The name of the user to show events for
+     * @param email The email of the user to show events for
      */
     public void printFilteredEventsByUser(String name, String email) {
         ArrayList<Event> filteredRecords = controller.filterEventByUser(name, email);
@@ -266,6 +273,11 @@ public class IO {
         runMainMenu();
     }
 
+    /**
+     * This method is the main method to run to start the program
+     * 
+     * @param args The command line arguments
+     */
     public static void main(String[] args) {
         // Run the program as normal without any Events, Establishments, and Users
         // recorded
