@@ -9,7 +9,7 @@ import kd.models.*;
  * The Controller class is responsible for storing and retrieving information
  * regarding Users, Establishments, and Events.
  * 
- * Updated on 19/09/2022
+ * Updated on 02/03/2023
  * 
  * @author Kimberly Dijkmans
  */
@@ -18,24 +18,11 @@ public class Controller {
     private ArrayList<Establishment> establishments;
     private ArrayList<Event> events;
 
-    /**
-     * This constructor creates a new Controller with an empty establishments list
-     * and an empty events list
-     */
     public Controller() {
         this.establishments = new ArrayList<>();
         this.events = new ArrayList<>();
     };
 
-    /**
-     * This method adds an Establishment to the list of establishments if it doesn't
-     * already exist
-     * 
-     * @param establishment The establishment to be added to the list of
-     *                      establishments
-     * @return <code>true</code> if adding to the list was successful
-     *         <code>false</code> if adding to the list was unsuccessful
-     */
     public boolean addEstablishment(Establishment establishment) {
         for (Establishment e : establishments) {
             if (e.equals(establishment)) {
@@ -45,13 +32,6 @@ public class Controller {
         return establishments.add(establishment);
     }
 
-    /**
-     * This method adds an Event to the list of events if it doesn't already exist
-     * 
-     * @param event The event to be added to list of events
-     * @return <code>true</code> if adding to the list was successful
-     *         <code>false</code> if adding to the list was unsuccessful
-     */
     public boolean addEvent(Event event) {
         for (Event e : events) {
             if (e.equals(event)) {
@@ -64,16 +44,10 @@ public class Controller {
         return events.add(event);
     }
 
-    /**
-     * @return establishment from the list of establishments
-     */
     public ArrayList<Establishment> getEstablishments() {
         return establishments;
     }
 
-    /**
-     * @return event from the list of events
-     */
     public ArrayList<Event> getEvents() {
         return events;
     }
