@@ -9,9 +9,7 @@ import kd.models.*;
  * The Controller class is responsible for storing and retrieving information
  * regarding Users, Establishments, and Events.
  * 
- * Updated on 02/03/2023
- * 
- * @author Kimberly Dijkmans
+ * @author Kimberly
  */
 public class Controller {
 

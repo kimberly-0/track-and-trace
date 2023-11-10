@@ -10,9 +10,7 @@ import kd.models.*;
  * The ImportCSV class is responsible for importing Establishments from a CSV
  * file.
  * 
- * Updated on 19/09/2022
- * 
- * @author Kimberly Dijkmans
+ * @author Kimberly
  */
 public class ImportCSV {
 

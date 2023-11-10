@@ -6,10 +6,8 @@ import java.time.format.DateTimeFormatter;
 
 /**
  * The User class is responsible for creating a User object.
- * 
- * Updated on 19/09/2022
- * 
- * @author Kimberly Dijkmans
+ *
+ * @author Kimberly
  */
 public class User {
 

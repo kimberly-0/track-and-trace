@@ -11,9 +11,7 @@ import kd.models.*;
  * The Recorder class is responsible for recording new Users, Establishments,
  * and Events via the command line interface.
  * 
- * Updated on 19/09/2022
- * 
- * @author Kimberly Dijkmans
+ * @author Kimberly
  */
 public class Recorder {
 

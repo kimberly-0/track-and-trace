@@ -2,10 +2,8 @@ package kd.models;
 
 /**
  * The Establishment class is responsible for creating a Establishment object.
- * 
- * Updated on 19/09/2022
- * 
- * @author Kimberly Dijkmans
+ *
+ * @author Kimberly
  */
 public class Establishment {
 
