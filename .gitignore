@@ -6,3 +6,7 @@ target/
 
 ## Javadoc folder
 javadoc/
+
+## IDE
+.vscode/
+.idea/
