@@ -2,13 +2,11 @@
 
 This project is a COVID-19 track and trace system with a command line interface. The program enables the recording and management of data about Events, Establishments and Users. The data is recorded for the purpose of tracing and alerting people who have been in close contact with a person who tested positive for COVID-19 [^1].
 
-It was created as part of the *Introduction to Software Development* module of the MSc Computer Science course at Newcastle University in November 2020 but has been revised and updated in September 2022.
-
 ## Preview
 
 Click [here](https://youtu.be/hBZEWHxWpEQ) for a video preview of the program on YouTube
 
-<img src="https://github.com/kidijkmans/track-and-trace/blob/master/preview.png" width="500">
+<img src="https://github.com/kimberly-0/track-and-trace/blob/master/preview.png" width="500">
 
 ## Tools and technologies used
 
@@ -31,7 +29,7 @@ The code has been commented to further explain the purpose of the classes and me
 
 2. Download the code in a ZIP file or clone the repository
 
-``` $ git clone https://github.com/kidijkmans/track-and-trace.git ```
+``` $ git clone https://github.com/kimberly-0/track-and-trace.git ```
 
 3. Open `IO.java` (located in *src/main/java/kd*) in an IDE
 
